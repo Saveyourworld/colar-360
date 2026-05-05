@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  /* Solar Industrial Palette */
+  --color-brand-primary: #0f172a; 
+  --color-brand-accent: #f59e0b;  
+  --color-brand-success: #16a34a; 
+
+  --font-heading: 'Outfit', sans-serif;
+  --radius-super: 2rem;
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8fafc; 
+  color: #0f172a;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Custom "Nigerian Market" Urgency Animation */
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); box-shadow: 0 0 20px rgba(22, 163, 74, 0.4); }
+}
+
+.animate-cta {
+  animation: pulse-soft 2s infinite ease-in-out;
+}
