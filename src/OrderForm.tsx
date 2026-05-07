@@ -7,7 +7,6 @@ export default function OrderForm() {
   const [showModal, setShowModal] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
 
-  // New pricing for Colar 3600
   const unitPrice = 959999;
   const originalPrice = 1550000; 
   const total = unitPrice * quantity;
